@@ -28,8 +28,6 @@ To run this project locally, follow these steps:
    npm install
 4. **Running the App**:
    npm run dev
-5. **Navigate to the project directory**:
-   cd signup-page
-6. **To run the tests with coverage**:
+5. **To run the tests with coverage**:
    npm run test -- --coverage
 
