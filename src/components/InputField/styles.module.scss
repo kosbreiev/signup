@@ -1,0 +1,113 @@
+@import "@/styles/global.scss";
+
+.wrapper {
+  position: relative;
+
+  .input {
+    width: 315px;
+    height: 48px;
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    border: 1px solid rgba(21, 29, 81, 0.2);
+    outline: none;
+    transition: all 0.3s ease;
+    gap: 10px;
+    box-sizing: border-box;
+
+    &[name="email"] {
+      color: $green; 
+      &::placeholder {
+        color: $green; 
+      }
+      border: 1px solid $green; 
+    }
+
+    &[name="password"] {
+      color: $secondary-color; 
+      &::placeholder {
+        color: $secondary-color; 
+      }
+    }
+
+    &[name="password"]:focus {
+      color: $primary-color; 
+      &::placeholder {
+        color: $primary-color; 
+      }
+      border: 2px solid $dark-blue; 
+    }
+
+    &:focus {
+      border: 2px solid $dark-blue; 
+    }
+
+    &.error {
+      color: $red; 
+      background: rgba(237, 95, 89, 0.1);
+      border: 2px solid $red; 
+    }
+
+    &.success {
+      border: 2px solid $green; 
+    }
+  }
+
+  .iconWrapper {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    img {
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+      height: 24px;
+      width: 24px;
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
+  }
+
+  .inputFeedback {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 20px;
+    width: 100%;
+    margin-top: 20px;
+
+    span {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+    }
+
+    .initial {
+      color: $primary-color; 
+    }
+
+    .error {
+      color: $red; 
+    }
+
+    .success {
+      color: $green; 
+    }
+  }
+}
+
+.validation-container {
+  width: 315px;
+  height: 62px;
+  padding-left: 20px;
+  gap: 4px;
+}
