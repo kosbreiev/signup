@@ -1,3 +1,4 @@
+import React from 'react';
 import { FC, useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
